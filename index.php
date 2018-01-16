@@ -13,16 +13,24 @@
 	</header>
 		<section>
 			<div id="Barre"></div>
-			<div id="Explication">
-				<div id="Menu">
-						<ul><li>Pollution</li></ul>
-						<ul><li>Free Wifi</li></ul>
-						<ul><li>Recycling</li></ul>
-						<ul><li>Food</li></ul>
-						<ul><li>Education</li></ul>
-					</div>
+			<div id="Explication"></div>
+			<div id="Menu">
+				<form id="Treat" method="post" action="">
+					<?php
+						$Menu=array("Home Page","Pollution","Free Wifi","Recycling","Food","Education");
+						foreach ($Menu as $key) {
+							echo "<ul><li><input type=\"submit\" value=\"".$key."\" name=\"Menu\"></li></ul>";
+						}
+					?>
+					</form>
+				</div>
 			<div id="Contenu">
-				CECI EST UN CONTENU
+				<?php
+					if(!empty($_POST)){
+						include_once("treat.php");
+						echo "<div id=\"php\">PATATE</div>";
+					}
+				?>
 			</div>
 		</section>
 	<footer>

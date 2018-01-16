@@ -62,10 +62,16 @@ footer{
 	border-radius: 20px;
 	width: 150px;
 	margin-left: 80px;
-}
-
-ul{
 	background-color: rgba(0,0,0,0.1);
+}
+#Treat{
+	width: 350px;
+	margin-left: 0px;
+}
+ul{
+	
+	width: 150px;
+
 }
 input{
 	border-color: #23B604;
@@ -90,8 +96,19 @@ li{
 
 #Contenu{
 	display: inline-block;
+	position: relative;
 }
-li:hover{
+#php{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+input:active{
+	border-color: red;
+}
+input:hover{
+	margin-top: 
+	border-radius: 20px;
 	border-style: outset;
 	background-color: #6AA874;
 }
