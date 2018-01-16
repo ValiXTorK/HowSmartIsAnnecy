@@ -14,22 +14,15 @@
 		<section>
 			<div id="Barre"></div>
 			<div id="Explication">
-			<form id="Treat" method="post" action="" >
 				<div id="Menu">
-					<?php
-						$Menu=array("Home Page","Pollution","Free Wifi","Recycling","Food","Education");
-						foreach ($Menu as $key) {
-							echo "<ul><li><input type=\"submit\" value=\"".$key."\"></li></ul>";
-						}
-					?>
+						<ul><li>Pollution</li></ul>
+						<ul><li>Free Wifi</li></ul>
+						<ul><li>Recycling</li></ul>
+						<ul><li>Food</li></ul>
+						<ul><li>Education</li></ul>
 					</div>
-				</form>
 			<div id="Contenu">
-				<?php
-					if(!empty($_POST)){
-						echo "banane";
-					}
-				?>
+				CECI EST UN CONTENU
 			</div>
 		</section>
 	<footer>
